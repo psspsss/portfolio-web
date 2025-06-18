@@ -3,6 +3,15 @@ import { normalize } from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   ${normalize}
+
+   @font-face {
+    font-family: 'Classic Console Neue';
+    src: url('/clacon2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   
   *, ::before, ::after {
     border-width: 0;
@@ -26,8 +35,9 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   }
 
   body {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 500;
+    font-family: 'Fira Code', monospace; //Iosevka NF
+    font-weight: 400;
+    font-size:20px;
     background-color: ${({ theme }) => theme.colors?.body};
     color: ${({ theme }) => theme.colors?.text[100]};
   }
@@ -53,7 +63,9 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   input[type=text] {
     background-color: ${({ theme }) => theme.colors?.body};
     color: ${({ theme }) => theme.colors?.text[100]};
+    // caret-color: ${({ theme }) => theme.colors?.primary};
     caret-color: ${({ theme }) => theme.colors?.primary};
+    carret-shape: block;
   }
   input[type=text]:focus-visible {
     outline: none;

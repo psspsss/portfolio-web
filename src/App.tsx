@@ -5,7 +5,8 @@ import GlobalStyle from "./components/styles/GlobalStyle";
 import Terminal from "./components/Terminal";
 
 export const themeContext = createContext<
-  ((switchTheme: DefaultTheme) => void) | null
+    ((switchTheme: DefaultTheme) => void) | null
+
 >(null);
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
     maskIcon && maskIcon.setAttribute("color", themeColor);
   }, [selectedTheme]);
 
-  const themeSwitcher = (switchTheme: DefaultTheme) => {
+   const themeSwitcher = (switchTheme: DefaultTheme) => {
     setSelectedTheme(switchTheme);
     setMode(switchTheme);
   };

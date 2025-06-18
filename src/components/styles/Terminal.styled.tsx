@@ -42,10 +42,11 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   flex-grow: 1;
-
-  @media (max-width: 550px) {
-    min-width: 85%;
-  }
+  background-color: ${({ theme }) => theme.colors?.body};
+  color: ${({ theme }) => theme.colors?.text[100]};
+  caret-color: transparent; // Hide native caret
+  position: relative;
+  z-index: 2;
 `;
 
 export const Hints = styled.span`

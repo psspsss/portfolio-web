@@ -19,6 +19,7 @@ import {
   Wrapper,
 } from "./styles/Terminal.styled";
 import { argTab } from "../utils/funcs";
+import BlockCaret from "./BlockCaret";
 
 type Command = {
   cmd: string;
@@ -67,13 +68,15 @@ const Terminal = () => {
   const [rerender, setRerender] = useState(false);
   const [hints, setHints] = useState<string[]>([]);
   const [pointer, setPointer] = useState(-1);
+  const [caretPos, setCaretPos] = useState(0);
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setRerender(false);
       setInputVal(e.target.value);
+      setCaretPos(e.target.selectionStart ?? e.target.value.length);
     },
-    [inputVal]
+    []
   );
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -179,6 +182,10 @@ const Terminal = () => {
     return () => clearTimeout(timer);
   }, [inputRef, inputVal, pointer]);
 
+  const handleInputClick = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCaretPos(e.target.selectionStart ?? inputVal.length);
+  };
+
   return (
     <Wrapper data-testid="terminal-wrapper" ref={containerRef}>
       {hints.length > 1 && (
@@ -188,7 +195,7 @@ const Terminal = () => {
           ))}
         </div>
       )}
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} style={{ position: "relative" }}>
         <label htmlFor="terminal-input">
           <TermInfo /> <MobileBr />
           <MobileSpan>&#62;</MobileSpan>
@@ -205,7 +212,29 @@ const Terminal = () => {
           value={inputVal}
           onKeyDown={handleKeyDown}
           onChange={handleChange}
+          onClick={handleInputClick}
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: "100%",
+            opacity: 0,
+            zIndex: 3,
+          }}
         />
+        <div
+          style={{
+            minHeight: "1.2em",
+            fontFamily: "inherit",
+            fontSize: "inherit",
+            whiteSpace: "pre",
+            pointerEvents: "none",
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
+          <BlockCaret position={caretPos} value={inputVal} />
+        </div>
       </Form>
 
       {cmdHistory.map((cmdH, index) => {

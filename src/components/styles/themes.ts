@@ -117,63 +117,15 @@ const theme: Themes = {
       },
     },
   },
-  "black-metal-bathory": {
-    id: "T_008",
-    name: "black-metal-bathory",
-    colors: {
-      body: "#000000",
-      scrollHandle: "#1c1c1c",
-      scrollHandleHover: "#333333",
-      primary: "#a66666",      // base08
-      secondary: "#c1c1c1",   // base06
-      text: {
-        100: "#c1c1c1",       // base06
-        200: "#aaaaaa",       // base05
-        300: "#1c1c1c",       // base01
-      },
-    },
-  },
-  "black-metal-marduk": {
-    id: "T_009",
-    name: "black-metal-marduk",
-    colors: {
-      body: "#000000",
-      scrollHandle: "#222125",
-      scrollHandleHover: "#444444",
-      primary: "#888888",      // base0D
-      secondary: "#999999",    // base0E
-      text: {
-        100: "#c1c1c1",       // base06
-        200: "#aaaaaa",       // base05
-        300: "#222125",       // base01
-      },
-    },
-  },
-  "black-metal-immortal": {
-    id: "T_010",
-    name: "black-metal-immortal",
-    colors: {
-      body: "#000000",
-      scrollHandle: "#1c1c1c",
-      scrollHandleHover: "#333333",
-      primary: "#5f8787",      // base0D
-      secondary: "#aaaaaa",    // base05
-      text: {
-        100: "#c1c1c1",       // base06
-        200: "#aaaaaa",       // base05
-        300: "#1c1c1c",       // base01
-      },
-    },
-  },
 
   "darkfuneral": {
-    id: "T_011",
+    id: "T_009",
     name: "darkfuneral",
     colors: {
-      body: "#000000",
-      scrollHandle: "#1c1c1c",
-      scrollHandleHover: "#333333",
-      primary: "#5f81a5",      // base0D
+      body: "#060f23",
+      scrollHandle: "#FED6AB",
+      scrollHandleHover: "#d0dfee",
+      primary: "#FED6AB",      // base0D
       secondary: "#d0dfee",    // base05
       text: {
         100: "#c1c1c1",       // base06
@@ -182,24 +134,24 @@ const theme: Themes = {
       },
     },
   },
- bathory: {
-    id: "T_011",
+  "bathory": {
+    id: "T_010",
     name: "bathory",
     colors: {
-      body: "#000000",
+      body: "#3E2018",
       scrollHandle: "#1c1c1c",
       scrollHandleHover: "#333333",
-      primary: "#a66666",      // base08
-      secondary: "#c1c1c1",   // base06
+      primary: "#e78a43",      // base08
+      secondary: "#fbcb97",   // base06
       text: {
         100: "#c1c1c1",       // base06
         200: "#aaaaaa",       // base05
-        300: "#1c1c1c",       // base01
+        300: "#a66666",       // base01
       },
     },
   },
-marduk: {
-    id: "T_012",
+  "marduk": {
+    id: "T_011",
     name: "marduk",
     colors: {
       body: "#000000",
@@ -214,15 +166,15 @@ marduk: {
       },
     },
   },
- gorgoroth: {
-    id: "T_015",
+  "gorgoroth": {
+    id: "T_012",
     name: "gorgoroth",
     colors: {
-      body: "#000000",
-      scrollHandle: "#222125",
+      body: "#000000", //#2a2325
+      scrollHandle: "#888888",
       scrollHandleHover: "#444444",
-      primary: "#5f8787",      // base0D
-      secondary: "#aaaaaa",    // base05
+      primary: "#ddeecc",      // base0D
+      secondary: "#9b8d7f",    // base05
       text: {
         100: "#c1c1c1",       // base06
         200: "#aaaaaa",       // base05
@@ -231,6 +183,137 @@ marduk: {
     },
   },
 
+  "khold": {
+    id: "T_013",
+    name: "khold",
+    colors: {
+      body: "#2B1111", //#39121b
+      scrollHandle: "#888888",
+      scrollHandleHover: "#444444",
+      primary: "#eceee3",      // base0D
+      secondary: "#974b46",    // base05
+      text: {
+        100: "#c1c1c1",       // base06
+        200: "#aaaaaa",       // base05
+        300: "#222125",       // base01
+      },
+    },
+  },
+  "burzum": {
+    id: "T_014",
+    name: "burzum",
+    colors: {
+      body: "#231c14", //#39121b
+      scrollHandle: "#ddeecc",
+      scrollHandleHover: "#99bbaa",
+      primary: "#ddeecc",      // base0D
+      secondary: "#99bbaa",    // base05
+      text: {
+        100: "#c1c1c1",       // base06
+        200: "#aaaaaa",       // base05
+        300: "#222125",       // base01
+      },
+    },
+  },
+  "ridethelightning": {
+    id: "T_015",
+    name: "ridethelightning",
+    colors: {
+      body: "#20173B", //#39121b
+      scrollHandle: "#756482",
+      scrollHandleHover: "#A8A1DE",
+      primary: "#756482",      // base0D
+      secondary: "#A8A1DE",    // base05
+      text: {
+        100: "#c1c1c1",       // base06
+        200: "#aaaaaa",       // base05
+        300: "#A8A1DE",       // base01
+      },
+    },
+  },
+  "bsod": {
+    id: "T_016",
+    name: "bsod",
+    colors: {
+      body: "#0000ff", //#39121b
+      scrollHandle: "#756482",
+      scrollHandleHover: "#A8A1DE",
+      primary: "#ebebff",      // base0D
+      secondary: "#ffffff",    // base05
+      text: {
+        100: "#c1c1c1",       // base06
+        200: "#aaaaaa",       // base05
+        300: "#a4a4ff",       // base01
+      },
+    },
+  },
+
+  matrix: {
+    id: "T_017",
+    name: "matrix",
+    colors: {
+      body: "#000000", //#39121b
+      scrollHandle: "#00ff2b",
+      scrollHandleHover: "#009a22",
+      primary: "#00ff2b",      // base0D
+      secondary: "#009a22",    // base05
+      text: {
+        100: "#c1c1c1",       // base06
+        200: "#aaaaaa",       // base05
+        300: "#00ff2b",       // base01
+      },
+    },
+  },
+
+  immortal: {
+    id: "T_018",
+    name: "immortal",
+    colors: {
+      body: "#1b161f", //#39121b
+      scrollHandle: "#7799bb",
+      scrollHandleHover: "#556677",
+      primary: "#7799bb",      // base0D
+      secondary: "#556677",    // base05
+      text: {
+        100: "#c1c1c1",       // base06
+        200: "#aaaaaa",       // base05
+        300: "#00ff2b",       // base01
+      },
+    },
+  },
+
+   gruvboxdark: {
+    id: "T_019",
+    name: "gruvboxdark",
+    colors: {
+      body: "#32302f", //#39121b
+      scrollHandle: "#8ec07c",
+      scrollHandleHover: "#458588",
+      primary: "#cc241d",      // base0D
+      secondary: "#d79921",    // base05
+      text: {
+        100: "#ebdbb2",       // base06
+        200: "#aaaaaa",       // base05
+        300: "#00ff2b",       // base01
+      },
+    },
+  },
+  everforestlight: {
+    id: "T_019",
+    name: "everforestlight",
+    colors: {
+      body: "#f2efdf", //#39121b
+      scrollHandle: "#e67e80",
+      scrollHandleHover: "#7a8478",
+      primary: "#e67e80",      // base0D
+      secondary: "#7a8478",    // base05
+      text: {
+        100: "#7a8478",       // base06
+        200: "#859289",       // base05
+        300: "#00ff2b",       // base01
+      },
+    },
+  },
 };
 
 export default theme;

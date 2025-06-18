@@ -47,7 +47,7 @@ function App() {
 
    const themeSwitcher = (switchTheme: DefaultTheme) => {
     setSelectedTheme(switchTheme);
-    setMode(switchTheme);
+    setMode(switchTheme.name); // Use the theme's name property (string key)
   };
 
   return (

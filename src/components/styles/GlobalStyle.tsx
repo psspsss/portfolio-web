@@ -63,9 +63,7 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   input[type=text] {
     background-color: ${({ theme }) => theme.colors?.body};
     color: ${({ theme }) => theme.colors?.text[100]};
-    // caret-color: ${({ theme }) => theme.colors?.primary};
     caret-color: ${({ theme }) => theme.colors?.primary};
-    carret-shape: block;
   }
   input[type=text]:focus-visible {
     outline: none;

@@ -182,8 +182,9 @@ const Terminal = () => {
     return () => clearTimeout(timer);
   }, [inputRef, inputVal, pointer]);
 
-  const handleInputClick = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCaretPos(e.target.selectionStart ?? inputVal.length);
+  const handleInputClick = (e: React.MouseEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLInputElement;
+    setCaretPos(target.selectionStart ?? inputVal.length);
   };
 
   return (

@@ -15,31 +15,55 @@ export const HeroContainer = styled.div`
   }
 `;
 
-export const PreName = styled.pre`
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-
-  @media (max-width: 550px) {
-    display: none;
-  }
-`;
-
 export const PreWrapper = styled.div`
   text-align: center;
 `;
 
-export const PreNameMobile = styled.pre`
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+export const PreImg = styled.pre`
+  font-family: "Classic Console Neue", monospace;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
 
-  @media (min-width: 550px) {
+  @media (max-width: 620px) {
+    font-size: 0.75rem;
+    padding: 0.25rem 0;
+  }
+`;
+
+export const PreName = styled.pre`
+  font-family: "Classic Console Neue", monospace;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
+  display: block;
+
+  @media (max-width: 620px) {
     display: none;
   }
 `;
 
-export const PreImg = styled.pre`
-  @media (max-width: 550px) {
-    display: none;
+export const PreNameMobile = styled.pre`
+  font-family: "Classic Console Neue", monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
+  display: none;
+
+  @media (max-width: 620px) {
+    display: block;
   }
 `;
 

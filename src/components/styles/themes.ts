@@ -314,6 +314,56 @@ const theme: Themes = {
       },
     },
   },
+
+  mothership: {
+    id: "T_020",
+    name: "mothership",
+    colors: {
+      body: "#20201d", //#39121b
+      scrollHandle: "#df3a13",
+      scrollHandleHover: " 	#f0f0f0",
+      primary: "#df3a13",      // base0D
+      secondary: " 	#f0f0f0",    // base05
+      text: {
+        100: "#df3a13",       // base06
+        200: " 	#f0f0f0",       // base05
+        300: "f0f0f0",       // base01
+      },
+    },
+  },
+
+   monolight: {
+    id: "T_021",
+    name: "monolight",
+    colors: {
+      body: "#fffffff", //#39121b
+      scrollHandle: "#000000",
+      scrollHandleHover: " 	434343",
+      primary: "#000000",      // base0D
+      secondary: " 	#434343",    // base05
+      text: {
+        100: "#000000",       // base06
+        200: "#434343",       // base05
+        300: "#434343",       // base01
+      },
+    },
+  },
+    monodark: {
+    id: "T_022",
+    name: "monodark",
+    colors: {
+      body: "#000000", //#39121b
+      scrollHandle: "#ffffff",
+      scrollHandleHover: "ffffff",
+      primary: "#fffffff",      // base0D
+      secondary: " 	#ffffff",    // base05
+      text: {
+        100: "#ffffff",       // base06
+        200: "#ffffff",       // base05
+        300: "#ffffff",       // base01
+      },
+    },
+  },
 };
 
 export default theme;

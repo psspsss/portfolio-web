@@ -47,6 +47,21 @@ const Welcome: React.FC = () => {
         </PreName>
         <PreWrapper>
           <PreNameMobile>
+
+             `
+                                     .
+              ,-.       _,---._ __  / \\
+             /  )    .-'       \`./ /   \\
+            (  (   ,'            \`/    /|
+             \\  \`-"             '\\\\   / |
+              \`.              ,  \\ \\ /  |
+               /\`.          ,'-\`----Y   |
+              (            ;        |   '
+              |  ,-.    ,-'         |  /
+              |  | (   |            | /
+              )  |  \\  \`.___________|/
+              \`--'   \`--'
+`;          
             {`
 
 
@@ -78,7 +93,11 @@ const Welcome: React.FC = () => {
         <Seperator>----</Seperator>
         <div>
           This project's source code can be found in this project's{" "}
+<<<<<<< HEAD
           <Link href="https://github.com/psspsss/portfolio-web/tree/main">
+=======
+          <Link href="https://github.com/psspsss/portfolio-web">
+>>>>>>> 9c00a3109f6ac10dc765f4838c924d1996539d2e
             GitHub repo
           </Link>
           .

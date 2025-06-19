@@ -3,6 +3,7 @@
   "short_name": "Terminal",
   "description": "Vinayak Majhi's terminal portfolio website coded with ReactJS.",
   "start_url": "/",
+<<<<<<< HEAD
   // "icons": [
   //   {
   //     "src": "/maskable-icons/maskable_icon_x48.png",
@@ -40,6 +41,8 @@
   //     "type": "image/png"
   //   }
   // ],
+=======
+>>>>>>> 9c00a3109f6ac10dc765f4838c924d1996539d2e
   "theme_color": "#1d2a35",
   "background_color": "#1d2a35",
   "display": "standalone"

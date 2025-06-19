@@ -65,6 +65,9 @@ export const PreNameMobile = styled.pre`
   @media (max-width: 620px) {
     display: block;
   }
+  @media (max-width: 340px) {
+    display: none;
+  }
 `;
 
 export const Seperator = styled.div`

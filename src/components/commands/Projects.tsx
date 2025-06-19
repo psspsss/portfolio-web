@@ -56,14 +56,14 @@ const Projects: React.FC = () => {
 const projects = [
   {
     id: 1,
-    title: "lambchat",
+    title: "Lambchat",
     desc: "- A real time chat application to share thoughts and experiences with your friends.",
     url: "https://github.com/psspsss/realtime-chat-app",
   },
   {
     id: 2,
     title: "Conways-Game of Life",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
+    desc: "A zero player game visualising simulation of Conways- Game of Life",
     url: "https://github.com/psspsss/cnways-gol?tab=readme-ov-file",
   },
   {

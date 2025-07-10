@@ -3,6 +3,7 @@ import { DefaultTheme, ThemeProvider } from "styled-components";
 import { useTheme } from "./hooks/useTheme";
 import GlobalStyle from "./components/styles/GlobalStyle";
 import Terminal from "./components/Terminal";
+import { Analytics } from "@vercel/analytics/next"
 
 export const themeContext = createContext<
     ((switchTheme: DefaultTheme) => void) | null
@@ -52,6 +53,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <h1 className="sr-only" aria-label="Terminal Portfolio">
         Terminal Portfolio
       </h1>

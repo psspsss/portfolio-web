@@ -3,11 +3,10 @@ import { DefaultTheme, ThemeProvider } from "styled-components";
 import { useTheme } from "./hooks/useTheme";
 import GlobalStyle from "./components/styles/GlobalStyle";
 import Terminal from "./components/Terminal";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 export const themeContext = createContext<
-    ((switchTheme: DefaultTheme) => void) | null
-
+  ((switchTheme: DefaultTheme) => void) | null
 >(null);
 
 function App() {
@@ -46,7 +45,7 @@ function App() {
     maskIcon && maskIcon.setAttribute("color", themeColor);
   }, [selectedTheme]);
 
-   const themeSwitcher = (switchTheme: DefaultTheme) => {
+  const themeSwitcher = (switchTheme: DefaultTheme) => {
     setSelectedTheme(switchTheme);
     setMode(switchTheme.name); // Use the theme's name property (string key)
   };

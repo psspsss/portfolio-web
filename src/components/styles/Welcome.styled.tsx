@@ -33,6 +33,9 @@ export const PreImg = styled.pre`
     font-size: 0.75rem;
     padding: 0.25rem 0;
   }
+  @media (max-width: 438px) {
+    display: none;
+  }
 `;
 
 export const PreName = styled.pre`
@@ -46,7 +49,7 @@ export const PreName = styled.pre`
   padding: 0.5rem 0;
   display: block;
 
-  @media (max-width: 620px) {
+  @media (max-width: 724px) {
     display: none;
   }
 `;
@@ -62,10 +65,10 @@ export const PreNameMobile = styled.pre`
   padding: 0.5rem 0;
   display: none;
 
-  @media (max-width: 620px) {
+  @media (max-width: 725px) {
     display: block;
   }
-  @media (max-width: 340px) {
+  @media (max-width: 257px) {
     display: none;
   }
 `;

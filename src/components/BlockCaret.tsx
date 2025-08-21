@@ -10,8 +10,14 @@ const Caret = styled.span<{ color: string }>`
   animation: blink 1s steps(1) infinite;
 
   @keyframes blink {
-    0%, 50% { opacity: 0.8; }
-    51%, 100% { opacity: 0; }
+    0%,
+    50% {
+      opacity: 0.8;
+    }
+    51%,
+    100% {
+      opacity: 0;
+    }
   }
 `;
 
@@ -22,6 +28,8 @@ interface BlockCaretProps {
 
 const BlockCaret: React.FC<BlockCaretProps> = ({ position, value }) => {
   const theme = useTheme();
+  const caretColor = theme?.colors?.primary || "#ffffff";
+
   const before = value.slice(0, position);
   const at = value[position] || " ";
   const after = value.slice(position + 1);
@@ -29,7 +37,7 @@ const BlockCaret: React.FC<BlockCaretProps> = ({ position, value }) => {
   return (
     <span style={{ fontFamily: "inherit", fontSize: "inherit" }}>
       {before}
-      <Caret color={theme.colors.primary}>{at}</Caret>
+      <Caret color={caretColor}>{at}</Caret>
       {after}
     </span>
   );

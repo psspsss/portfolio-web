@@ -35,15 +35,27 @@ const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   }
 
   body {
-    font-family: 'Fira Code', monospace; //Iosevka NF
+    font-family: 'Fira Code', monospace;
     font-weight: 400;
-    font-size:20px;
+    font-size: 20px;
     background-color: ${({ theme }) => theme.colors?.body};
     color: ${({ theme }) => theme.colors?.text[100]};
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+
+  #app-border {
+    border: 2px solid ${({ theme }) => theme.colors?.primary};
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 48px); 
+    background: ${({ theme }) => theme.colors?.body};
   }
 
   /* ===== Custom Scroll Bar ===== */
-  /* width */
+  // /* width */
   ::-webkit-scrollbar {
     width: 15px;
   }

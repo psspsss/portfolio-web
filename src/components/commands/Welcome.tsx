@@ -2,13 +2,12 @@ import {
   Cmd,
   HeroContainer,
   Link,
-  PreImg,
   PreName,
   PreNameMobile,
   PreWrapper,
   Seperator,
 } from "../styles/Welcome.styled";
-
+import styled from "styled-components";
 
 const asciiArt = `
                                      .
@@ -33,8 +32,8 @@ const Welcome: React.FC = () => {
           {`        
 
           
-       _             _       
-                 ███                         ███          
+      
+              ███                         ███          
              ░░░                         ░░░           
  █████ █████ ████  ████████   ████████   ████   ██████ 
 ░░███ ░░███ ░░███ ░░███░░███ ░░███░░███ ░░███  ███░░███
@@ -46,7 +45,8 @@ const Welcome: React.FC = () => {
    `}
         </PreName>
         <PreWrapper>
-          <PreNameMobile>{`
+          <PreNameMobile>
+            {`
 
 
 .%%..%%.%%%%%%.
@@ -73,7 +73,10 @@ const Welcome: React.FC = () => {
           `}
           </PreNameMobile>
         </PreWrapper>
-        <div>hi, I'm Vinayak Majhi <br/> Welcome to my kitty terminal. (Version 1.3.1)</div>
+        <div>
+          hi, I'm Vinayak Majhi <br /> Welcome to my kitty terminal. (Version
+          1.4.1)
+        </div>
         <Seperator>----</Seperator>
         <div>
           This project's source code can be found in this project's{" "}
@@ -88,12 +91,23 @@ const Welcome: React.FC = () => {
         </div>
       </div>
       <div className="illu-section">
-        <PreImg>
-          {asciiArt}
-        </PreImg>
+        <PreImg>{asciiArt}</PreImg>
       </div>
     </HeroContainer>
   );
 };
 
 export default Welcome;
+
+const PreImg = styled.pre`
+  font-family: "Fira Code", monospace;
+  font-size: 1.1rem;
+  max-width: 480px;
+  width: 100%;
+  overflow-x: auto;
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+`;

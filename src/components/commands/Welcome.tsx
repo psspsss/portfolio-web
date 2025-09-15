@@ -75,7 +75,7 @@ const Welcome: React.FC = () => {
         </PreWrapper>
         <div>
           hi, I'm Vinayak Majhi <br /> Welcome to my kitty terminal. (Version
-          1.4.1)
+          1.5.5)
         </div>
         <Seperator>----</Seperator>
         <div>
